@@ -1,0 +1,145 @@
+Tarea de JavaScript.
+
+Nombre: Sebastián Mogrovejo
+
+---------------------------------------------------------------------------------------
+Tipos de Datos Primitivos:
+---------------------------------------------------------------------------------------
+Ejercicio 1: Conversión de tipos
+
+let numero1 ;
+let numero2;
+
+numero1 = prompt("Ingrese el primer numero");
+numero2 = prompt("Ingrese el segundo numero");
+
+
+const transformacion = function(a){
+
+switch(a){
+    case 'uno':
+        return  1;
+        break;
+ case 'dos':
+       return 2;
+        break;
+ case 'tres':
+        return 3;
+        break;
+ case 'cuatro':
+        return 4;
+        break;
+ case 'cinco':
+        return 5;
+        break;
+ case 'seis':
+        return 6;
+        break; 
+ case 'siete':
+        return 7;
+        break;
+ case 'ocho':
+        return 8;
+        break;
+ case default :
+	return 0;
+}
+}
+let numero1f = transformacion (numero1);
+let numero2f = transformacion (numero2);
+
+console.log(numero1f + numero2f);
+
+--------------------------------------------------------------
+Ejercicio 2: Verificación de tipo de dato
+
+let valor;
+
+valor = ("Ingrese un valor");
+console.log(typeof valor);
+
+---------------------------------------------------------------------------------------
+TypeOf
+---------------------------------------------------------------------------------------
+Ejercicio 1: Verificación de tipo de variable
+
+let variable = 8;
+console.log(typeof variable);
+
+
+--------------------------------------------------------------
+Ejercicio 2: Verificación de tipo de argumento de función
+
+function tipoDato(a) {
+  console.log(typeof a);
+}
+let a = 'queso';
+tipoDato(a);
+
+---------------------------------------------------------------------------------------
+Variables, Declaración, Inicialización, console.log
+---------------------------------------------------------------------------------------
+
+Ejercicio 1: Operaciones con variables
+
+let a = 2;
+let b = 3;
+let resultado = a * b;
+
+console.log(resultado);
+
+--------------------------------------------------------------
+Ejercicio 2: Concatenación de variables y texto
+
+let a = 'Hola,';
+let b = ' ¿Como ';
+
+console.log(a + b + 'Estas?');
+
+---------------------------------------------------------------------------------------
+Funciones
+---------------------------------------------------------------------------------------
+Ejercicio 1: Suma de dos números utilizando function declaration
+
+function suma(a, b) {
+  return a + b;
+}
+
+console.log(suma(2, 3));
+
+--------------------------------------------------------------
+Ejercicio 2: Cálculo del área de un triángulo utilizando function expression (función
+anónima)
+
+const areaTriangulo = function(a, b) {
+  return (a * b)/2;
+};
+
+console.log(areaTriangulo (3, 4));
+
+---------------------------------------------------------------------------------------
+Ejercicio 1: Acceso a variables dentro y fuera de una función
+
+var miNombre = "Diego"
+
+function nombre(usuario) {
+    var miNombre = usuario;
+    console.log(miNombre); 
+}
+
+nombre("Oscar");
+
+
+console.log(`Hola ${miNombre}, cómo estás?`);
+
+---------------------------------------------------------------------------------------
+Ejercicio 2: Acceso a variables con el mismo nombre en diferentes ámbitos
+
+function nombre(usuario) {
+    var miNombre = usuario;
+    console.log(miNombre); 
+}
+
+nombre("Oscar");
+
+console.log(`Hola ${miNombre}, cómo estás?`);
