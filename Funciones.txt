@@ -1,0 +1,51 @@
+Tarea de JavaScript.
+
+Nombre: Sebastián Mogrovejo
+Link Github: https://github.com/8443-slmogrovejo/10047-MogrovejoSebastian-TareaJavaScript.git
+---------------------------------------------------------------------------------------
+Funciones
+---------------------------------------------------------------------------------------
+Ejercicio 1: Suma de dos números utilizando function declaration
+
+function suma(a, b) {
+  return a + b;
+}
+
+console.log(suma(2, 3));
+
+--------------------------------------------------------------
+Ejercicio 2: Cálculo del área de un triángulo utilizando function expression (función
+anónima)
+
+const areaTriangulo = function(a, b) {
+  return (a * b)/2;
+};
+
+console.log(areaTriangulo (3, 4));
+
+---------------------------------------------------------------------------------------
+Ejercicio 1: Acceso a variables dentro y fuera de una función
+
+var miNombre = "Sebastian"
+
+function nombre(usuario) {
+    var miNombre = usuario;
+    console.log(miNombre); 
+}
+
+nombre("Leonardo");
+
+
+console.log(`Nombre impreso: ${miNombre}`);
+
+---------------------------------------------------------------------------------------
+Ejercicio 2: Acceso a variables con el mismo nombre en diferentes ámbitos
+
+function nombre(usuario) {
+    var miNombre = usuario;
+    console.log(miNombre); 
+}
+
+nombre("Leonardo");
+
+console.log(`Nombre impreso: ${miNombre}`);

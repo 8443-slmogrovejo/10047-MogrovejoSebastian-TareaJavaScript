@@ -1,0 +1,23 @@
+Tarea de JavaScript.
+
+Nombre: Sebastián Mogrovejo
+Link Github: https://github.com/8443-slmogrovejo/10047-MogrovejoSebastian-TareaJavaScript.git
+
+---------------------------------------------------------------------------------------
+TypeOf
+---------------------------------------------------------------------------------------
+Ejercicio 1: Verificación de tipo de variable
+
+let variable = 8;
+console.log(typeof variable);
+
+
+--------------------------------------------------------------
+Ejercicio 2: Verificación de tipo de argumento de función
+
+function tipoDato(a) {
+  console.log(typeof a);
+}
+let a = 'queso';
+tipoDato(a);
+
